@@ -1,2 +1,2 @@
-# Coursera-test
+# DavidChu Bristo
 Cousera test repository
