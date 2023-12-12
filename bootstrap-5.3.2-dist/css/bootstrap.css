@@ -734,11 +734,15 @@ progress {
   color: var(--bs-secondary-color);
 }
 
+<div class="container-fluid">
+
+<div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+
+...
+</div>
 .container,
 .container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
 .container-md,
 .container-sm {
   --bs-gutter-x: 1.5rem;
