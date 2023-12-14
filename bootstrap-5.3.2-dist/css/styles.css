@@ -1,20 +1,51 @@
 body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family:'Oxygen', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family:'Oxygen', sans-serif;
 
+}
 
-h1 {
+  h1 {
     text-align: center;
-  margin-top: 80px;
- }   
+  margin-top: 20px;
+      }   
 
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        text-align: center;
+      margin-top: 20px;
+          }   
+    
+      
+    
+    p {
+      
+      margin-left:100px;
+      margin-right:80px;
+      background-color:orange;
+      text-align: center;
+      width: 50%;
+     
+       
+    }
+      .content {
+        background-color: #34C9EB;
+        margin-top: 20px;
+        width: 300px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-size-adjust: 5em;
+        margin-right: 3.33%;
+       
+      }
+    
 .container,
 .container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
 .container-md,
 .container-sm {
   --bs-gutter-x: 1.5rem;
@@ -26,17 +57,50 @@ h1 {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
+ /* Medium */
+ @media (min-width: 768px) {
+  .content {
+      width: 28%;
+      margin-right: 3.33%;
+      margin-left: 10px;
+      float:left;
+  
+    }
+    .content:last-child {
+      margin-right: 0;
+    }
+  }
+
+ /* small */
+ @media (min-width: 574px) and (max-width: 767px) {
+  .content {
+    width: 47%; /* Adjusted for two columns */
+    margin-right: 6%;
+    
+  }
+  .content:nth-child(2n) {
+    margin-right: 0;
+  }
+  .h1 {
+    text-align: center;
+    ;
   }
 }
-@media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
+/* Xsmall */
+@media (max-width: 575px) {
+  .content {
+    width: 100%; /* Full width for small screens */
+    margin-right: 0;
+  }
+  .h1 {
+    text-align: center;
   }
 }
 
+.container .jumotron {
+  box-shadow: 0 0 50px #3f0c1f;
+  border: 2px solid #3f0c1f;
+}
 /** HEADER **/
 #header-nav {
     background-color: #f6b319;
@@ -60,9 +124,10 @@ h1 {
     color: #557c3e;
     font-size: 1.5em;
     text-transform: uppercase;
+    text-align: start;
     font-weight: bold;
     text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
+    margin-top: -10%;
     margin-bottom: 0;
     line-height: .75;
 }
@@ -70,33 +135,23 @@ h1 {
 .navbar-brand a:hover,.navbar-brand a:focus {
     text-decoration: none;
 }
-.navbar-brand p {/* Kosher cert */
-color: #000;
-text-transform: uppercase;
-font-size: .7em;
-margin-top: 15px;
+.navbar-text { /* Menu */
+  text-decoration: bold;
+  text-align: center;
+  text-shadow: #222;
+  position: relative;
+  float: right;
+ }
 
-}
-.navbar-brand p span { /* Star-K */
-vertical-align: middle;
-}
-body {
-    padding-bottom: 20px;
-  }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
-}
+
 
 #nav-list {
-    margin-top: : 10px;
-
+    margin-top: 10px;
+    text-align: center;
 }
 #nav-list a {
     color: #951c49;
     text-align: center;
-
 }
 
 #nav-list a :hover {
@@ -113,6 +168,7 @@ body {
 #phone a { /* phone number */
     text-align: right;
     padding-top: 0;
+    font-size: 1em;
 }
 
 #phone div { /* We deliver */
@@ -121,14 +177,5 @@ body {
    padding-right: 15px;
 }
 
-body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
-  font-family:'Oxygen', sans-serif;
-}
 
-h1 {
-  text-align: center;
-margin-top: 80px;
-}   
+}
